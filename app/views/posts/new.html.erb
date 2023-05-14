@@ -1,0 +1,24 @@
+<h1>New Post</h1>
+
+<%= form_with :model => @post do |form| %>
+  <p>
+    <%= form.label "first_name" %>
+    <%= form.text_field "first_name" %>
+  </p>
+  <p>
+    <%= form.label "last_name" %>
+    <%= form.text_field "last_name" %>
+  </p>
+  <p>
+    <%= form.label "email" %>
+    <%= form.text_field "email" %>
+  </p>
+  <p>
+    <%= form.label "phone_number" %>
+    <%= form.text_field "phone_number" %>
+  </p>
+    <%= form.text_field "company_id" %>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
