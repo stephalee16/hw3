@@ -2,22 +2,21 @@
 
 <%= form_with :model => @post do |form| %>
   <p>
-    <%= form.label "first_name" %>
-    <%= form.text_field "first_name" %>
+    <%= form.label "title" %>
+    <%= form.text_field "title" %>
   </p>
   <p>
-    <%= form.label "last_name" %>
-    <%= form.text_field "last_name" %>
+    <%= form.label "description" %>
+    <%= form.text_field "description" %>
   </p>
+
   <p>
-    <%= form.label "email" %>
-    <%= form.text_field "email" %>
+    <%= form.label "date" %>
+    <%= form.date_field "date" %>
   </p>
-  <p>
-    <%= form.label "phone_number" %>
-    <%= form.text_field "phone_number" %>
-  </p>
-    <%= form.text_field "company_id" %>
+ 
+    <%= form.text_field "place_id" %>
+ 
   <p>
     <%= form.submit %>
   </p>
