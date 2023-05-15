@@ -9,11 +9,11 @@ class PostsController < ApplicationController
  
     @post = Post.new
 
-    @post["title"] = params["contact"]["title"]
-    @post["description"] = params["contact"]["description"]
-    @post["posted_on"] = params["contact"]["posted_on"]
+    @post["title"] = params["post"]["title"]
+    @post["description"] = params["post"]["description"]
+    @post["posted_on"] = params["post"]["posted_on"]
 
-    @post["place_id"] = params["place"]["place_id"]
+    @post["place_id"] = params["post"]["place_id"]
 
     # save Contact row
     @post.save
